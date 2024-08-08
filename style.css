@@ -1,5 +1,6 @@
 *{
     font-family: "Archivo", sans-serif;
+    transition: 0.5rem linear;
 }
 
 
@@ -8,7 +9,7 @@
     width: 100%;
     height: 650px;
     background-image: url('img/bg-top.webp');
-    background-size: 100% auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: local;
@@ -225,7 +226,7 @@
 .vantagens .cards-vantagens .bloco-card{
     width: 350px;
     background-color: #0E121673;
-    border: 1px solid white;
+    border: 1px solid #636363;
     border-radius: 5px;
     padding: 20px;
 }
@@ -238,7 +239,7 @@
 .vantagens .cards-vantagens .bloco-card h1{
     color: white;
     font-size: 25px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid #636363;
     margin-top: 20px;
     padding-bottom: 30px;
 }
@@ -322,7 +323,7 @@
 .entenda .cards-entenda .bloco-card{
     width: 350px;
     background-color: #0E121673;
-    border: 1px solid white;
+    border: 1px solid #636363;
     border-radius: 5px;
     padding: 20px;
 }
@@ -335,7 +336,7 @@
 .entenda .cards-entenda .bloco-card h1{
     color: white;
     font-size: 25px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid #636363;
     margin-top: 20px;
     padding-bottom: 30px;
 }
@@ -404,23 +405,35 @@
     padding: 16px 32px 16px 32px;
 }
 
-.perguntas-frequentes .details{
+.perguntas-frequentes .details {
     border-bottom: 1px solid #1CC434;
+    overflow: hidden;
 }
 
-.perguntas-frequentes .details summary{
+.perguntas-frequentes .details summary {
     padding-bottom: 10px;
     font-size: 20px;
     color: white;
     font-weight: bold;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-.perguntas-frequentes .details summary:hover{
+.perguntas-frequentes .details summary:hover {
     color: #1CC434;
 }
 
-.perguntas-frequentes .details p{
+.perguntas-frequentes .details[open] .content {
+    max-height: 1000px; /* Defina um valor grande o suficiente */
+}
+
+.perguntas-frequentes .details .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.perguntas-frequentes .details p {
     padding: 20px;
     background-color: black;
     color: white;
