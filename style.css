@@ -1,0 +1,477 @@
+*{
+    font-family: "Archivo", sans-serif;
+}
+
+
+/*---------------------TOPO DO SITE-------------------*/
+.cabecalho {
+    width: 100%;
+    height: 650px;
+    background-image: url('img/bg-top.webp');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: local;
+    overflow: hidden !important;
+}
+@media screen  and (max-width: 1290px){
+    .cabecalho{
+        background-size: cover;
+    }
+}
+@media screen  and (max-width: 500px){
+    .cabecalho{
+        height: 550px;
+    }
+}
+
+.cabecalho .navbar{
+    background-color: #07090BAD;
+}
+
+.cabecalho .navbar .navbar-brand{
+    width: 200px;
+}
+
+.cabecalho .navbar .btn-entrar{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #FFFFFF 0%, #BDBDBD 100%);
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+@media screen and (max-width: 500px){
+    .cabecalho .navbar .btn-entrar{
+        background-color: transparent;
+        background-image: linear-gradient(105deg, #FFFFFF 0%, #BDBDBD 100%);
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+.cabecalho .navbar .btn-criar-conta{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #1CC434 0%, #2F8E3D 100%) !important;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+
+.boas-vindas{
+    margin-top: 40px;
+}
+@media screen and (max-width: 1290px){
+    .boas-vindas{
+        width: 450px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 500px){
+    .boas-vindas{
+        margin: 30px auto;
+    }
+}
+
+.boas-vindas .badge-padrao{
+    width: 280px;
+    background-color: #1CC4341C;
+    color: #1CC434;
+    border-radius: 5px;
+}
+
+.boas-vindas .frase{
+    color: white;
+    line-height: 85px;
+    font-weight: bold;
+    font-size: 80px;
+}
+@media screen and (max-width: 500px){
+    .boas-vindas .frase{
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+.boas-vindas .impacto{
+    color: #8F8F8F;
+    font-size: 18px;
+    font-weight: lighter;
+}
+@media screen and (max-width: 500px){
+    .boas-vindas .impacto{
+        font-size: 15px;
+    }
+}
+
+.boas-vindas .btn-inicio{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #1CC434 0%, #2F8E3D 100%) !important;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+
+/*---------------------MEIO DO SITE 1-------------------*/
+.ativos{
+    height: auto;
+    background-image: url('img/bg-meio-1.webp') !important;
+    background-position: center;
+}
+
+.ativos .inicio .badge-padrao{
+    width: 280px;
+    background-color: #1CC4341C;
+    color: #1CC434;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.ativos .inicio .frase{
+    color: white;
+    font-size: 64px;
+}
+
+.ativos .inicio .frase span{
+    color: rgb(28, 196, 52);
+}
+
+.ativos .inicio .impacto{
+    color: #8F8F8F;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.ativos .prancheta{
+    height: auto;
+    border-radius: 5px;
+    background-image: url('img/prancheta.webp');
+    background-size: cover;
+}
+
+.ativos .prancheta .frase-apresentacao{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.ativos .prancheta .carrousel {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ativos .prancheta .carrousel-row {
+    display: flex;
+    gap: 25px;
+    width: 200%; /* Duplicar a largura para acomodar os clones */
+    animation: scroll 15s linear infinite;
+}
+
+.ativos .prancheta .carrousel-row .image{
+    width: 100px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ativos .btn-demos{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #1CC434 0%, #2F8E3D 100%) !important;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+
+/*---------------------MEIO DO SITE 2-------------------*/
+.vantagens{
+    height: auto;
+    background-image: url('img/map-bg-1.webp') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #07090B;
+    background-attachment: fixed;
+}
+
+.vantagens .inicio .badge-padrao{
+    width: 280px;
+    background-color: #1CC4341C;
+    color: #1CC434;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.vantagens .inicio .frase{
+    color: white;
+    font-size: 64px;
+}
+
+.vantagens .inicio .frase span{
+    color: rgb(28, 196, 52);
+}
+
+.vantagens .cards-vantagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.vantagens .cards-vantagens .bloco-card{
+    width: 350px;
+    background-color: #0E121673;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.vantagens .cards-vantagens .bloco-card i{
+    color: white;
+    font-size: 20px;
+}
+
+.vantagens .cards-vantagens .bloco-card h1{
+    color: white;
+    font-size: 25px;
+    border-bottom: 0.5px solid white;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.vantagens .cards-vantagens .bloco-card p{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/*---------------------MEIO DO SITE 3-------------------*/
+.seguranca{
+    height: auto;
+    background-color: #2F8E3D;
+}
+
+.seguranca .inicio .badge-padrao{
+    width: 280px;
+    background-color: #FFFFFF1F;
+    color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.seguranca .inicio .frase{
+    color: white;
+    font-size: 64px;
+}
+@media screen and (max-width: 900px){
+    .seguranca .inicio .frase{
+        font-size: 50px;
+    }
+}
+
+.seguranca .inicio .frase span{
+    color: rgb(28, 196, 52);
+}
+
+.seguranca .inicio .impacto{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/*---------------------MEIO DO SITE 4-------------------*/
+.entenda{
+    height: auto;
+    background-image: url('img/bg-meio-1.webp') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #07090B;
+    background-attachment: local;
+}
+
+.entenda .inicio .badge-padrao{
+    width: 280px;
+    background-color: #1CC4341C;
+    color: #1CC434;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.entenda .inicio .frase{
+    color: white;
+    font-size: 64px;
+}
+
+.entenda .inicio .frase span{
+    color: rgb(28, 196, 52);
+}
+
+.entenda .cards-entenda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.entenda .cards-entenda .bloco-card{
+    width: 350px;
+    background-color: #0E121673;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.entenda .cards-entenda .bloco-card i{
+    color: white;
+    font-size: 20px;
+}
+
+.entenda .cards-entenda .bloco-card h1{
+    color: white;
+    font-size: 25px;
+    border-bottom: 0.5px solid white;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.entenda .cards-entenda .bloco-card p{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.entenda .btn-conta{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #1CC434 0%, #2F8E3D 100%) !important;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+
+/*---------------------MEIO DO SITE 5-------------------*/
+.perguntas-frequentes{
+    height: auto;
+    background-image: url('img/bg-meio-1.webp') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom !important;
+    background-color: #07090B;
+    background-attachment: local;
+}
+
+.perguntas-frequentes .perguntas-frequentes-explicacao .badge-padrao{
+    width: 280px;
+    background-color: #1CC4341C;
+    color: #1CC434;
+    border-radius: 5px;
+}
+
+.perguntas-frequentes .perguntas-frequentes-explicacao .frase{
+    color: white;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 60px;
+}
+@media screen and (max-width: 500px){
+    .perguntas-frequentes .perguntas-frequentes-explicacao .frase{
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+.perguntas-frequentes .perguntas-frequentes-explicacao .impacto{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+@media screen and (max-width: 500px){
+    .perguntas-frequentes .perguntas-frequentes-explicacao .impacto{
+        font-size: 15px;
+    }
+}
+
+.perguntas-frequentes .perguntas-frequentes-explicacao .btn-inicio{
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #1CC434 0%, #2F8E3D 100%) !important;
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px 16px 32px;
+}
+
+.perguntas-frequentes .details{
+    border-bottom: 1px solid #1CC434;
+}
+
+.perguntas-frequentes .details summary{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.perguntas-frequentes .details summary:hover{
+    color: #1CC434;
+}
+
+.perguntas-frequentes .details p{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*---------------------FOOTER-------------------*/
+.footer{
+    background-color: black;
+}
+
+.footer-1 .logo{
+    width: 250px;
+}
+
+.footer-1 .logo img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .footer-1 .texto{
+        margin-top: 20px;
+    }
+}
+
+.footer-1 .texto h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-1 .texto span{
+    color: white;
+    font-size: 15px;
+}
+
+.footer .maioridade{
+    margin-top: 60px;
+    color: white;
+    font-size: 9px;
+    text-align: center;
+}
+
+.footer-2{
+    background-color: #1CC434;
+}
+
+.footer-2 p{
+    padding-top: 22px;
+    text-align: center;
+    color: white;
+}
