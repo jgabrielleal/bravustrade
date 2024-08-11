@@ -1,4 +1,5 @@
 # Bravustrade
+Landing page para o projeto "Bravustrade"
 
 # Instalação 
 1. Clone o repositório 
